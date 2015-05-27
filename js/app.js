@@ -41,15 +41,14 @@ $(document).ready(function() {
 			$(".question").remove();
 			$("#answer-wrapper input").remove();
 			$("#answer-wrapper span").remove();
-			var newAnswer1 = '<span class="question">'+Questions[currentQuestion].question+'</span><div id="answer-wrapper"><input type="radio" name="Answer" class="answer-select" value="0" /><span class="answer-one">'+Questions[currentQuestion].multipleChoice[0]+'</span></br><input type="radio" name="Answer" class="answer-select" value="1"/><span class="answer-two">'+Questions[currentQuestion].multipleChoice[1]+'</span></br><input type="radio" name="Answer" class="answer-select" value="2"/><span class="answer-three">'+Questions[currentQuestion].multipleChoice[2]+'</span></br></div>';
-			// <div id="controls"><input id="submit" type="button" value="Submit Answer"/></div>';
-			$(".container").html(newAnswer1);
-		}
-		else {
+			var newAnswer1 = '<span class="question">'+Questions[currentQuestion].question+'</span><div id="answer-wrapper"><input type="radio" name="Answer" class="answer-select" value="0" /><span class="answer-one">'+Questions[currentQuestion].multipleChoice[0]+'</span></br><input type="radio" name="Answer" class="answer-select" value="1"/><span class="answer-two">'+Questions[currentQuestion].multipleChoice[1]+'</span></br><input type="radio" name="Answer" class="answer-select" value="2"/><span class="answer-three">'+Questions[currentQuestion].multipleChoice[2]+'</span>';
+			$("#answer-wrapper").html(newAnswer1);
+		} else {
 			$(".question").remove();
 			$("#answer-wrapper input").remove();
 			$("#answer-wrapper span").remove();
 			var qLast = '<p>Good Job! Would you like to try again?</p><div id="controls"><input type="button", id="new", value="Retry?"/>';
+			$(".container").html(qLast);
 		};
 	}
 });
