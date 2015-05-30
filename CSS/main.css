@@ -50,6 +50,10 @@ table {
 * {
 	border: 1px solid black;
 }
+p {
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+}
 /*--- Begin main styles ---*/
 header {
 	background-color: white;
@@ -62,8 +66,9 @@ header h2 {
 	font-family: 'Lobster', cursive;
 	font-weight: 600;
 }
-.question {
-	font-family: 'Lato', sans-serif;
+.counter {
+	float: right;
+	padding-right: 2rem;
 }
 #background {
 	/*background-image: url('../images/Donuts2.jpg'); */
@@ -72,26 +77,30 @@ header h2 {
 	background-color: #fff;
 }
 .container {
+	/*border: 1px solid black;*/
+	/*border-radius: 100px;*/
 	padding-top: 10rem;
-	/*text-align: center;*/
 	margin: 0 auto;
-	width: 400px;
+	width: 300px;
 	height: 400px;
 	font-weight: 300;
 	font-size: 20px;
 	color: #000;
 }
 .question {
+	font-family: 'Lato', sans-serif;
 	text-align: center;
-	padding-left: 3.5rem;
+	margin: 0 auto;
+	padding-bottom: 1.5rem;
 }
 #answer-trivia {
 	display: none;
 }
 #answer-wrapper {
+	text-align: left;
 	float: none;
 	padding-top: 2rem;
-	padding-left: 7.6rem;
+	
 }
 /*input {
 	padding-bottom: 3rem;
@@ -113,13 +122,19 @@ button:hover {
 	cursor: pointer;
 	background-color: #141414;
 }
-#submit {
-	text-align: center;
+#submit, #new, #next {
+	/*text-align: center;*/
 	border: 0 none;
 	background-color: #444;
 	color: white;
 	border-radius: 3px;
 	padding: 10px 16px 11px 16px;
+}
+#new {
+	display: none;
+}
+#next {
+	display: none;
 }
 ul {
 	font-family:'Lato', sans-serif;
@@ -129,15 +144,6 @@ ul {
 li {
 	margin: 0 auto;
 	padding-top: 5px;
-	text-align: center;
-}
-#next {
-	display: none;
-}
-#new {
-	display: none;
-}
-#answer-one {
 	text-align: center;
 }
 .question-title {

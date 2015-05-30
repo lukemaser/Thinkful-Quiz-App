@@ -12,29 +12,30 @@
 <body id="background">
 	<header>
 		<h2>Doughnut Quiz</h2>
+		</hr>
+		<!-- <h2 class="counter">1/5</h2> -->
 	</header>
 		<div class="container">
-			<span class="question">When were doughnuts invented ?</span>
-			<div id="answer-wrapper">
+			<div id="question-wrapper">
+				<h2 class="question">
+					<span>When were doughnuts invented ?</span>
+				</h2>
 					<input type="radio" name="Answer" class="answer-select" value="0" />
-						<span class="answer-one">1856, not 1658</span>
+						<span class="answer-one">500 B.C.</span>
 					</br>
 
 					<input type="radio" name="Answer" class="answer-select" value="1"/>
-						<span class="answer-two">1901</span>
+						<span class="answer-two">1922</span>
 					</br>
 
 					<input type="radio" name="Answer" class="answer-select" value="2"/>
-						<span class="answer-three">500 B.C.</span>
+						<span class="answer-three">Mid 1800's</span>
 					</br>
 			</div>
-<!-- 			<div id="answer-trivia">
-				<p>According to popular legend, doughnuts were invented by Descartes for the purpose of understanding geometry on a deeper level. Thus the rounded shape and hole in the middle, for working on diameter problems. Also, because they were delicious, epsecially when paired with the newly discovered coffee.</p>
-			</div>
- -->		<div id="controls">
+			<div id="controls">
 				<input type="button" id="submit" value="Submit Answer"/>
-
-				<button id="new">New Game?</button>	
+				<input type="button" id="new" value="New Game"/>	
+				<input type="button" id="next" value="Next Question"/>
 			</div>
 		</div>
 </body>
